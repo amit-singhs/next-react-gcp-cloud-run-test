@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Next.js on Google Cloud Run',
-  description: 'Deploy your Next.js application to Google Cloud Run',
+  title: 'Switzerland - Discover Alpine Paradise',
+  description: 'Experience the breathtaking beauty of Switzerland with its majestic mountains, pristine lakes, and charming cities.',
 };
 
 export default function RootLayout({
@@ -12,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
